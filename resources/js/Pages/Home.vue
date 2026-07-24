@@ -665,6 +665,52 @@ const formatNumber = (num) => {
             </div>
         </div>
 
+        <!-- Peta Wilayah Section -->
+        <div class="py-24 bg-white relative overflow-hidden">
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 animate-fade-in-up">
+                    <span class="text-blue-600 font-bold tracking-wider uppercase text-sm block mb-3">Lokasi Geografis</span>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4 leading-tight">Peta Wilayah Desa Gunungjaya</h2>
+                    <p class="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+                        Kunjungi kantor balai desa kami atau jelajahi wilayah desa melalui peta digital berikut.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-2 sm:p-6 rounded-3xl shadow-lg border border-blue-100 animate-fade-in-up" style="animation-delay: 0.2s">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3489476753846!2d109.4051097!3d-6.972222199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7016b6e0000001%3A0x1!2sBalai%20Desa%20Gunungjaya!5e0!3m2!1sid!2sid!4v1234567890" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full">
+                        </iframe>
+                    </div>
+                    <div class="mt-6 flex flex-col sm:flex-row items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mx-auto max-w-4xl">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-0 sm:mr-4 mb-4 sm:mb-0 flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 mb-1">Alamat Kantor Balai Desa</h4>
+                            <p class="text-gray-600 mb-3">Jl. Raya Gunungjaya No. 123, Gunungjaya, Kec. Belik, Kabupaten Pemalang, Jawa Tengah 52355</p>
+                            <a href="https://maps.app.goo.gl/sB9eiHEKe8r1yir86" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-bold group">
+                                <span>Buka di Google Maps</span>
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- CTA Pengaduan -->
         <div class="py-24 bg-gradient-to-r from-blue-900 via-blue-800 to-teal-900 relative overflow-hidden">
             <!-- Decorative elements -->
