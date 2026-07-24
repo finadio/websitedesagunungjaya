@@ -9,25 +9,26 @@
 
 Website resmi Desa Gunungjaya yang dibangun dengan teknologi modern untuk memberikan informasi, layanan, dan transparansi kepada masyarakat.
 
-## 📋 Daftar Isi
+## Daftar Isi
 
-- [Tentang Project](#-tentang-project)
-- [Fitur Utama](#-fitur-utama)
-- [Tech Stack](#-tech-stack)
-- [Prerequisites](#-prerequisites)
-- [Instalasi](#-instalasi)
-- [Konfigurasi](#-konfigurasi)
-- [Menjalankan Aplikasi](#-menjalankan-aplikasi)
-- [Struktur Project](#-struktur-project)
-- [Admin Panel](#-admin-panel)
-- [Seeding Data](#-seeding-data)
-- [Pengembangan](#-pengembangan)
-- [Deployment](#-deployment)
-- [Troubleshooting](#-troubleshooting)
-- [Kontribusi](#-kontribusi)
-- [Lisensi](#-lisensi)
+- [Tentang Project](#tentang-project)
+- [Screenshot Tampilan](#screenshot-tampilan)
+- [Fitur Utama](#fitur-utama)
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Instalasi](#instalasi)
+- [Konfigurasi](#konfigurasi)
+- [Menjalankan Aplikasi](#menjalankan-aplikasi)
+- [Struktur Project](#struktur-project)
+- [Admin Panel](#admin-panel)
+- [Seeding Data](#seeding-data)
+- [Pengembangan](#pengembangan)
+- [Deployment](#deployment)
+- [Troubleshooting](#troubleshooting)
+- [Kontribusi](#kontribusi)
+- [Lisensi](#lisensi)
 
-## 🎯 Tentang Project
+## Tentang Project
 
 Website Desa Gunungjaya adalah platform digital yang dirancang untuk meningkatkan transparansi dan pelayanan publik di tingkat desa. Website ini menyediakan informasi profil desa, berita, agenda kegiatan, galeri foto, layanan publik, serta sistem pengaduan masyarakat.
 
@@ -38,60 +39,87 @@ Website Desa Gunungjaya adalah platform digital yang dirancang untuk meningkatka
 - **Partisipasi**: Memfasilitasi pengaduan dan aspirasi masyarakat
 - **Dokumentasi**: Mendokumentasikan kegiatan dan perkembangan desa
 
-## ✨ Fitur Utama
+## Screenshot Tampilan
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%" align="center">
+        <b>Halaman Utama (Beranda)</b><br/><br/>
+        <img src="public/screenshots/screencapture-127-0-0-1-8000-2026-07-24-17_39_46.png" alt="Beranda" width="100%"/>
+      </td>
+      <td width="50%" align="center">
+        <b>Wilayah & Peta Desa</b><br/><br/>
+        <img src="public/screenshots/screencapture-127-0-0-1-8000-wilayah-2026-07-24-17_47_10.png" alt="Wilayah dan Peta" width="100%"/>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <b>Transparansi APBDes</b><br/><br/>
+        <img src="public/screenshots/screencapture-127-0-0-1-8000-apbdes-2026-07-24-17_47_47.png" alt="Transparansi APBDes" width="100%"/>
+      </td>
+      <td width="50%" align="center">
+        <b>Pusat Unduhan Dokumen</b><br/><br/>
+        <img src="public/screenshots/screencapture-127-0-0-1-8000-download-2026-07-24-17_48_03.png" alt="Pusat Unduhan" width="100%"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## Fitur Utama
 
 ### Frontend (Public)
 
-- 🏠 **Halaman Beranda**: Tampilan modern dengan informasi ringkas
-- 📰 **Berita & Pengumuman**: Artikel berita dengan kategori dan pencarian
-- 📅 **Agenda Kegiatan**: Kalender kegiatan desa
-- 🖼️ **Galeri Foto**: Dokumentasi kegiatan dalam galeri
-- 👥 **Profil Desa**: 
+- **Halaman Beranda**: Tampilan modern dengan informasi ringkas
+- **Berita & Pengumuman**: Artikel berita dengan kategori dan pencarian
+- **Agenda Kegiatan**: Kalender kegiatan desa
+- **Galeri Foto**: Dokumentasi kegiatan dalam galeri
+- **Profil Desa**: 
   - Sejarah Desa
   - Visi & Misi
   - Struktur Pemerintahan Desa
   - Perangkat Desa (Kepala Desa, Sekdes, Kaur, Kasi, Kadus)
-- 🏛️ **Lembaga Desa**:
+- **Lembaga Desa**:
   - BPD (Badan Permusyawaratan Desa)
   - LPM (Lembaga Pemberdayaan Masyarakat)
   - PKK (Pembinaan Kesejahteraan Keluarga)
   - Karang Taruna
   - Posyandu (5 posyandu dengan kader)
-- 📊 **Data Statistik**: Data kependudukan dan demografi
-- 📝 **Layanan Publik**: Informasi persyaratan dan prosedur layanan
-- 💬 **Pengaduan Masyarakat**: Sistem pengaduan online dengan tracking
-- 🗺️ **Informasi Wilayah**: Peta dan batas wilayah desa
+- **Data Statistik**: Data kependudukan dan demografi
+- **Layanan Publik**: Informasi persyaratan dan prosedur layanan
+- **Pengaduan Masyarakat**: Sistem pengaduan online dengan tracking
+- **Informasi Wilayah**: Peta dan batas wilayah desa
 
 ### Backend (Admin Panel)
 
-- 🔐 **Sistem Login & Role Management**:
+- **Sistem Login & Role Management**:
   - Administrator (akses penuh)
   - Editor (kelola konten)
   - Staff (akses terbatas)
-- 📊 **Dashboard**: 8 widget statistik real-time dengan trend
-- 📄 **Manajemen Konten**:
+- **Dashboard**: 8 widget statistik real-time dengan trend
+- **Manajemen Konten**:
   - Halaman (dengan Rich Text Editor)
   - Berita & Artikel (kategori, excerpt, SEO)
   - Agenda Kegiatan
   - Galeri Foto
-- 👤 **Manajemen Data Desa**:
+- **Manajemen Data Desa**:
   - Profil Desa (logo, sejarah, visi-misi)
   - Perangkat Desa (foto, jabatan)
   - Layanan Desa
   - Data Statistik (demografi, pendidikan, pekerjaan, dll)
-- 💬 **Manajemen Pengaduan**:
+- **Manajemen Pengaduan**:
   - View & update status pengaduan
   - Filter berdasarkan status
   - Tracking pengaduan
-- 👥 **Manajemen Pengguna**:
+- **Manajemen Pengguna**:
   - CRUD users
   - Role assignment
   - Password management
-- ⚙️ **Pengaturan Website**:
+- **Pengaturan Website**:
   - Konfigurasi umum
   - SEO settings
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 
@@ -114,7 +142,7 @@ Website Desa Gunungjaya adalah platform digital yang dirancang untuk meningkatka
 - **Laravel Pint**: Code styling (PHP)
 - **PHPUnit**: Testing framework
 
-## 📦 Prerequisites
+## Prerequisites
 
 Pastikan sistem Anda telah menginstall:
 
@@ -129,7 +157,7 @@ Pastikan sistem Anda telah menginstall:
 - [Laravel Herd](https://herd.laravel.com/) (macOS)
 - [Laravel Sail](https://laravel.com/docs/sail) (Docker)
 
-## 🚀 Instalasi
+## Instalasi
 
 ### 1. Clone Repository
 
@@ -222,7 +250,7 @@ npm run dev
 npm run build
 ```
 
-## ⚙ Konfigurasi
+## Konfigurasi
 
 ### File Upload
 
@@ -258,7 +286,7 @@ MAIL_FROM_ADDRESS=noreply@gunungjaya.desa.id
 MAIL_FROM_NAME="${APP_NAME}"
 ```
 
-## 🏃 Menjalankan Aplikasi
+## Menjalankan Aplikasi
 
 ### Development Server
 
@@ -295,7 +323,7 @@ php artisan optimize
 
 3. **Setup web server** (Apache/Nginx) dengan document root ke `/public`
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 gunungjaya/
@@ -338,7 +366,7 @@ gunungjaya/
     └── console.php            # Console Routes
 ```
 
-## 🔐 Admin Panel
+## Admin Panel
 
 ### Akses Admin Panel
 
@@ -350,7 +378,7 @@ URL: `http://localhost:8000/admin`
 - Email: `admin@gunungjaya.desa.id`
 - Password: `password`
 
-⚠️ **PENTING**: Ganti password default setelah login pertama kali!
+**PENTING**: Ganti password default setelah login pertama kali!
 
 ### User Roles
 
@@ -362,14 +390,14 @@ URL: `http://localhost:8000/admin`
 
 ### Fitur Admin Panel
 
-- 📊 **Dashboard**: Overview statistik dengan 8 widget real-time
-- 📝 **Rich Text Editor**: Toolbar lengkap (heading, list, table, file upload)
-- 🔍 **Search & Filter**: Pencarian dan filter di setiap tabel
-- 📱 **Responsive**: Mobile-friendly admin panel
-- 🎨 **Theme**: Emerald green dengan logo desa
-- 🗂️ **Navigation Groups**: Menu terorganisir dalam 4 grup
+- **Dashboard**: Overview statistik dengan 8 widget real-time
+- **Rich Text Editor**: Toolbar lengkap (heading, list, table, file upload)
+- **Search & Filter**: Pencarian dan filter di setiap tabel
+- **Responsive**: Mobile-friendly admin panel
+- **Theme**: Emerald green dengan logo desa
+- **Navigation Groups**: Menu terorganisir dalam 4 grup
 
-## 🌱 Seeding Data
+## Seeding Data
 
 ### Seed Semua Data
 
@@ -396,9 +424,9 @@ php artisan db:seed --class=AdminUserSeeder
 php artisan migrate:fresh --seed
 ```
 
-**⚠️ Warning**: Ini akan **menghapus semua data** dan membuat database baru!
+**Warning**: Ini akan **menghapus semua data** dan membuat database baru!
 
-## 👨‍💻 Pengembangan
+## Pengembangan
 
 ### Code Style
 
@@ -445,7 +473,7 @@ APP_ENV=production
 APP_DEBUG=false
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Server Requirements
 
@@ -530,7 +558,7 @@ server {
 }
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Error: "Class not found"
 
@@ -579,7 +607,7 @@ php artisan storage:link
 php artisan optimize:clear
 ```
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Kontribusi selalu diterima! Silakan ikuti langkah berikut:
 
@@ -596,28 +624,28 @@ Kontribusi selalu diterima! Silakan ikuti langkah berikut:
 - Write tests untuk fitur baru
 - Update dokumentasi jika diperlukan
 
-## 📝 Changelog
+## Changelog
 
 Lihat [CHANGELOG.md](CHANGELOG.md) untuk riwayat perubahan.
 
-## 📄 Lisensi
+## Lisensi
 
 Project ini dilisensikan under [MIT License](LICENSE).
 
-## 👥 Tim Pengembang
+## Tim Pengembang
 
 - **Backend Developer**: [Your Name]
 - **Frontend Developer**: [Your Name]
 - **UI/UX Designer**: [Your Name]
 
-## 📞 Kontak & Support
+## Kontak & Support
 
 - **Website Desa**: https://gunungjaya.desa.id
 - **Email**: info@gunungjaya.desa.id
 - **Telepon**: (0284) XXX-XXXX
 - **Alamat**: Jl. Raya Gunungjaya No. 123, Kec. Pemalang, Kab. Pemalang, Jawa Tengah
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Laravel](https://laravel.com/) - The PHP Framework
 - [Filament](https://filamentphp.com/) - Admin Panel Builder
@@ -628,6 +656,6 @@ Project ini dilisensikan under [MIT License](LICENSE).
 
 ---
 
-**Made with ❤️ for Desa Gunungjaya**
+**Made for Desa Gunungjaya**
 
 © 2026 Desa Gunungjaya. All rights reserved.

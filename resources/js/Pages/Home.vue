@@ -56,59 +56,81 @@ const formatNumber = (num) => {
     <Head title="Beranda" />
 
     <GuestLayout>
-        <!-- Hero Section -->
-        <div class="relative bg-gray-50 overflow-hidden min-h-[700px] flex items-center pt-16">
-            <!-- Video Background -->
+        <!-- Hero Section (Premium Modern Government UI) -->
+        <div class="relative bg-slate-950 overflow-hidden min-h-[660px] lg:min-h-[740px] flex flex-col justify-center pt-20 pb-16">
+            <!-- Full Video Background (Color Tinted Video with Radial Overlay) -->
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform scale-110 origin-center">
-                    <source src="/images/banner.MOV" type="video/mp4">
+                <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform scale-105 origin-center">
+                    <source src="/images/banner4.MP4" type="video/mp4">
                 </video>
-                <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+                
+                <!-- Overall Overlay (Reduced Opacity to ~35%) -->
+                <div class="absolute inset-0 bg-[#0F172A]/35"></div>
+                <!-- Radial Gradient Vignette Localized Directly Behind Text Block -->
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(15,23,42,0.85)_0%,rgba(15,23,42,0.4)_55%,transparent_80%)] pointer-events-none"></div>
             </div>
             
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
-                <div class="flex flex-col items-center text-center mt-12">
-                    <div class="animate-fade-in-up max-w-4xl flex flex-col items-center">
-                        
-                        <!-- Eyebrow text -->
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-8 sm:w-16 h-[2px] bg-white/80 rounded-full"></div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-xs sm:text-sm md:text-base text-white uppercase tracking-[0.2em] font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">Selamat Datang di</span>
-                            </div>
-                            <div class="w-8 sm:w-16 h-[2px] bg-white/80 rounded-full"></div>
-                        </div>
-
-                        <!-- Main Title -->
-                        <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-tight text-center flex flex-col sm:flex-row justify-center items-center sm:gap-x-4 mb-8">
-                            <span class="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">Desa</span>
-                            <span class="text-blue-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">Gunungjaya</span>
-                        </h1>
-                        
-                        <!-- Description -->
-                        <p class="text-base sm:text-lg md:text-xl text-white font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mb-12">
-                            Mewujudkan Desa Gunungjaya yang Mandiri, Sejahtera, dan Berkeadaban melalui Pelayanan Publik yang Prima dan Inovatif.
-                        </p>
-                        
-                        <!-- CTA Buttons -->
-                        <div class="flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto">
-                            <Link href="/layanan" class="flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full shadow-xl hover:shadow-blue-500/50 transition-all transform hover:-translate-y-1">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                                Layanan Mandiri
-                            </Link>
-                            <Link href="/sejarah" class="flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/50 hover:border-white font-bold rounded-full shadow-lg transition-all transform hover:-translate-y-1">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                Jelajahi Desa
-                            </Link>
-                        </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 sm:py-22 lg:py-26 w-full flex-1 flex items-center">
+                <div class="max-w-3xl text-left pl-2 sm:pl-6 lg:pl-8">
+                    
+                    <!-- Eyebrow Badge (White text + Glowing animated dot) -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-5 shadow-sm">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-80"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400 shadow-[0_0_8px_#38bdf8]"></span>
+                        </span>
+                        <span class="text-xs font-bold tracking-wider text-white uppercase">Selamat Datang di Portal Resmi</span>
                     </div>
+
+                    <!-- Headline (Solid Bright Sky Blue for "Gunungjaya" - No Gradient) -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] mb-5">
+                        <span class="text-white">Desa </span>
+                        <span class="text-sky-400 drop-shadow-md">Gunungjaya</span>
+                    </h1>
+                    
+                    <!-- Sub-Headline / Paragraph (New Text & Extended 3xl Width) -->
+                    <p class="text-base sm:text-lg text-white font-normal leading-[1.7] max-w-2xl sm:max-w-3xl mb-8 drop-shadow-sm">
+                        Portal resmi Pemerintah Desa Gunungjaya yang menghadirkan layanan administrasi, informasi desa, transparansi pemerintahan, serta berbagai potensi lokal dalam satu platform digital yang mudah diakses oleh seluruh masyarakat.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-4">
+                        <!-- Primary Button (Solid Blue #2563EB) -->
+                        <Link href="/layanan" class="bg-[#2563EB] hover:bg-blue-600 text-white px-7 py-3.5 rounded-[16px] font-semibold text-base transition-all duration-300 flex items-center gap-2.5 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/40 transform hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                            <span>Layanan Mandiri</span>
+                        </Link>
+
+                        <!-- Secondary Button (Map Pin Icon) -->
+                        <Link href="/sejarah" class="bg-white/[0.12] hover:bg-white/[0.20] backdrop-blur-[12px] border border-white/20 hover:border-white/40 text-white px-7 py-3.5 rounded-[16px] font-semibold text-base transition-all duration-300 flex items-center gap-2.5 shadow-sm transform hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Jelajahi Desa</span>
+                        </Link>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- Mouse Scroll Indicator (Elevated for clear clearance above wave peak) -->
+            <div class="absolute bottom-16 sm:bottom-18 lg:bottom-20 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-1.5 group cursor-pointer opacity-85 hover:opacity-100 transition duration-300">
+                <div class="w-5 h-8 sm:w-6 sm:h-9 rounded-full border-2 border-white/40 group-hover:border-white/80 flex justify-center p-1 backdrop-blur-xs transition duration-300 shadow-md">
+                    <div class="w-1.5 h-2.5 sm:w-1.5 sm:h-3 bg-white rounded-full animate-bounce mt-0.5"></div>
+                </div>
+                <span class="text-[9px] sm:text-[10px] font-bold text-white/80 group-hover:text-white tracking-[0.2em] uppercase transition duration-300 drop-shadow">Scroll</span>
+            </div>
             
-             <!-- Wave Divider -->
-            <div class="absolute bottom-0 left-0 right-0">
-                <svg class="fill-white w-full h-12 md:h-24" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            <!-- Bottom Transition Wave (Restored & Layered Semi-Transparent White Waves) -->
+            <div class="absolute -bottom-px left-0 right-0 overflow-hidden leading-none z-10">
+                <svg class="relative block w-full h-16 sm:h-20 lg:h-24 text-white fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <!-- Restored Semi-Transparent Upper White Wave (Opacity 0.15 for high visibility) -->
+                    <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" opacity="0.15"></path>
+                    <!-- Layered Right-Side Accent Wave -->
+                    <path d="M0,55 C350,115 650,45 880,80 C1020,102 1120,55 1200,70 L1200,120 L0,120 Z" opacity="0.10"></path>
+                    <!-- Main Solid White Wave -->
+                    <path d="M0,40 Q300,90 600,30 T1200,60 L1200,120 L0,120 Z"></path>
                 </svg>
             </div>
         </div>

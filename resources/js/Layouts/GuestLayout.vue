@@ -22,18 +22,18 @@ const closeDropdown = () => {
 <template>
     <div class="min-h-screen flex flex-col bg-gray-50 font-sans text-gray-900">
         <!-- Floating Navbar -->
-        <div class="fixed top-6 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
-            <nav class="max-w-7xl mx-auto bg-white/85 backdrop-blur-md rounded-full shadow-xl border border-white/20 pl-4 pr-6 py-3 transition-all duration-300">
-                <div class="flex justify-between items-center">
+        <div class="fixed top-4 sm:top-5 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+            <nav class="max-w-7xl mx-auto bg-white/90 backdrop-blur-[18px] rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.08)] border border-white/40 pl-3.5 pr-4 sm:pr-5 py-2 sm:py-2.5 transition-all duration-300">
+                <div class="flex justify-between items-center h-11 sm:h-12">
                     <div class="flex items-center">
                         <!-- Logo -->
-                        <Link href="/" class="flex items-center gap-3 group">
-                            <div class="w-12 h-12 rounded-full overflow-hidden shadow-lg ring-2 ring-white group-hover:scale-105 transition duration-300">
+                        <Link href="/" class="flex items-center gap-2.5 group">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden shadow-sm ring-2 ring-slate-100 group-hover:scale-105 transition duration-300">
                                 <img src="/images/logo.png" alt="Logo Desa Gunungjaya" class="w-full h-full object-cover" />
                             </div>
                             <div class="flex flex-col">
-                                <span class="text-xl font-bold text-gray-900 leading-none tracking-tight group-hover:text-blue-700 transition">Gunungjaya</span>
-                                <span class="text-[0.65rem] text-gray-500 font-bold tracking-[0.2em] uppercase mt-1">Kab. Pemalang</span>
+                                <span class="text-base sm:text-lg font-bold text-slate-900 leading-none tracking-tight group-hover:text-blue-600 transition">Gunungjaya</span>
+                                <span class="text-[0.6rem] text-slate-500 font-bold tracking-[0.18em] uppercase mt-0.5">Kab. Pemalang</span>
                             </div>
                         </Link>
                     </div>
