@@ -23,7 +23,7 @@ const closeDropdown = () => {
     <div class="min-h-screen flex flex-col bg-gray-50 font-sans text-gray-900">
         <!-- Floating Navbar -->
         <div class="fixed top-6 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
-            <nav class="max-w-7xl mx-auto bg-white/95 backdrop-blur-md rounded-full shadow-xl border border-white/20 pl-4 pr-6 py-3 transition-all duration-300">
+            <nav class="max-w-7xl mx-auto bg-white/85 backdrop-blur-md rounded-full shadow-xl border border-white/20 pl-4 pr-6 py-3 transition-all duration-300">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
                         <!-- Logo -->
@@ -41,7 +41,7 @@ const closeDropdown = () => {
                     <!-- Desktop Menu -->
                     <div class="hidden lg:flex items-center space-x-1">
                         <Link href="/" class="px-6 py-2.5 text-sm font-bold rounded-full transition-all duration-300" 
-                            :class="$page.url === '/' ? 'bg-blue-50 text-blue-700 shadow-sm' : 'text-gray-600 hover:bg-gray-50 hover:text-blue-700'">
+                            :class="$page.url === '/' ? 'bg-blue-600 text-white shadow-sm' : 'text-gray-600 hover:bg-gray-50 hover:text-blue-700'">
                             Beranda
                         </Link>
 
@@ -141,7 +141,7 @@ const closeDropdown = () => {
              <!-- Mobile Menu -->
             <div :class="{'opacity-100 translate-y-0': showingNavigationDropdown, 'opacity-0 -translate-y-4 pointer-events-none': !showingNavigationDropdown}" class="lg:hidden bg-white rounded-3xl mt-4 shadow-2xl ring-1 ring-black/5 absolute left-4 right-4 overflow-hidden transition-all duration-300 transform z-40">
                 <div class="px-2 pt-2 pb-3 space-y-1 max-h-[calc(100vh-12rem)] overflow-y-auto">
-                    <Link href="/" class="block px-4 py-3 rounded-xl text-base font-semibold transition" :class="$page.url === '/' ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'">
+                    <Link href="/" class="block px-4 py-3 rounded-xl text-base font-semibold transition" :class="$page.url === '/' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'">
                         Beranda
                     </Link>
                     
