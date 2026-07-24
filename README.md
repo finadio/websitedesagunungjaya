@@ -46,7 +46,7 @@ Website Desa Gunungjaya adalah platform digital yang dirancang untuk meningkatka
     <tr>
       <td width="50%" align="center">
         <b>Halaman Utama (Beranda)</b><br/><br/>
-        <img src="public/screenshots/screencapture-127-0-0-1-8000-2026-07-24-17_39_46.png" alt="Beranda" width="100%"/>
+        <img src="public/screenshots/screencapture-127-0-0-1-8000-2026-07-24-20_24_13.png" alt="Beranda" width="100%"/>
       </td>
       <td width="50%" align="center">
         <b>Wilayah & Peta Desa</b><br/><br/>
